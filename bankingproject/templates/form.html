@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form action = "" method = "post">-->
+<!--	{% csrf_token %}-->
+<!--	{{form }}-->
+
+<!--</form>-->
+
+<form method="post">
+    {% csrf_token %}
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br>
+    <label for="dob">DOB :</label>
+    <input type="date" name="DOB" max="2030-31-12"><br>
+    <label for="age">AGE :</label>
+    <input type="number" name="Age"><br>
+    <label for="gender">Gender :</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="fmale">Female
+    <input type="radio" name="gender" value="other">Other<br>
+  <label for="number">Number :</label>
+    <input type="number" name="Number"><br>
+  <label for="mail">Email :</label>
+    <input type="email" name="email"><br>
+  <label>
+          Address :
+          <br />
+          <textarea name="address" cols="30" rows="3"></textarea>
+  </label><br>
+  <label for="district">District :</label>
+  <select name = "dropdown">
+    <option value = "Trivandrum" selected>Trivandrum</option>
+    <option value = "Kollam">Kollam</option>
+    <option value = "Pathanamthitta" required>Pathanamthitta</option>
+    <option value = "Alappuzha" disabled>Alappuzha</option>
+    <option value = "Kottayam">Kottayam</option>
+    <option value = "Idukki">Idukki</option>
+    <option value = "Ernakulam">Ernakulam</option>
+    <option value = "Thrissur">Thrissur</option>
+    <option value = "Palakkad">Palakkad</option>
+    <option value = "Malappuram">Malappuram</option>
+    <option value = "Kozhikkode">Kozhikkode</option>
+    <option value = "Wayanad">Wayanad</option>
+    <option value = "Kannur">Kannur</option>
+    <option value = "Kasargod">Kasargod</option>
+ </select><br>
+  <label for="branches">Branches :</label>
+  <select name = "dropdownlist">
+    <option value = "Padmanabhapuram" selected>Padmanabhapuram</option>
+    <option value = "Shanmugham">Shanmugham</option>
+    <option value = "Krishnapuram" required>Krishnapuram</option>
+    <option value = "Thangasheri" disabled>Thangasheri</option>
+    <option value = "Adoor">Adoor</option>
+    <option value = "Cherthala">Cherthala</option>
+    <option value = "Munnar">Munnar</option>
+    <option value = "Aluva">Aluva</option>
+    <option value = "Edappally">Edappally</option>
+    <option value = "Guruvayur">Guruvayur</option>
+    <option value = "Tirur">Tirur</option>
+    <option value = "Manjeri">Manjeri</option>
+    <option value = "Mananchira">Mananchira</option>
+    <option value = "Thamarasseri">Thamarasseri</option>
+    <option value = "Kalpetta">Kalpetta</option>
+    <option value = "Mananthavady">Mananthavady</option>
+    <option value = "Thalassery">Thalassery</option>
+    <option value = "Koothuparamba">Koothuparamba</option>
+    <option value = "Manjesuaram">Manjesuaram</option>
+ </select><br>
+   <label for="Account">Account :</label>
+  <select name = "dropdowna">
+    <option value = "Saving" selected>Saving</option>
+    <option value = "Current">Current</option>
+    <option value = "NRI" required>NRI</option>
+    <option value = "Fixed" required>Fixed</option>
+    <option value = "Demat" required>Demat</option>
+ </select><br>
+  <input type="checkbox" name="debit" value="debit">Debit Card
+   <br>
+   <input type="checkbox" name="credit" value="credit">Credit Card
+   <br>
+   <input type="checkbox" name="chequebook" value="chequebook">Cheque Book
+   <br>
+    <input type="submit" value=Submit">
+    <input type="button" value="logout">
+</body>
+</html>
